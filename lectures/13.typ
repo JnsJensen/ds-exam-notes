@@ -59,4 +59,25 @@
   }
 }
 
-=== 
+=== Fog/Edge Storage
+- Mobile devices
+- Storage and delivery of content in peer devices at the network edge
+  - Potential reduction in latency
+  - Potential increase of data rates
+
+==== Mobile
+- Each device generates some data
+- If a device is lost, the data from that device is lost if nothing clever is done
+  - Other neighbouring devices can store the data
+- Replicas bad, because of storage and bandwidth costs
+  - Repairing a lost device is _very_ expensive
+- Erasure codes are better
+  - Model as multicast flow problem, see slides
+
+*MSR Repair: Repair with no new-comer nodes*
+- See slides
+#image("../img/12/fe-simple.png")
+
+#report-block[
+  What does "min-cut" mean for multicast flow problems?
+]
